@@ -12,14 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let ccView = CircularView()
+        
+        ccView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(ccView)
+        
+        let viewsDictionary = ["ccView": ccView]
+        
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[ccView]-20-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        self.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-40-[ccView]-40-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: viewsDictionary))
+        
+        self.view.backgroundColor = UIColor.purple
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

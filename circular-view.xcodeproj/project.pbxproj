@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		414382C420153B55005DC0D2 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414382C320153B55005DC0D2 /* CircularView.swift */; };
+		414382C520153B55005DC0D2 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414382C320153B55005DC0D2 /* CircularView.swift */; };
+		414382C620153B55005DC0D2 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414382C320153B55005DC0D2 /* CircularView.swift */; };
 		41B5A276201531D600D24590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B5A275201531D600D24590 /* AppDelegate.swift */; };
 		41B5A278201531D600D24590 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B5A277201531D600D24590 /* ViewController.swift */; };
 		41B5A27B201531D600D24590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B5A279201531D600D24590 /* Main.storyboard */; };
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		414382C320153B55005DC0D2 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 		41B5A272201531D600D24590 /* circular-view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "circular-view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B5A275201531D600D24590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41B5A277201531D600D24590 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				41B5A27C201531D600D24590 /* Assets.xcassets */,
 				41B5A27E201531D600D24590 /* LaunchScreen.storyboard */,
 				41B5A281201531D600D24590 /* Info.plist */,
+				414382C320153B55005DC0D2 /* CircularView.swift */,
 			);
 			path = "circular-view";
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414382C420153B55005DC0D2 /* CircularView.swift in Sources */,
 				41B5A278201531D600D24590 /* ViewController.swift in Sources */,
 				41B5A276201531D600D24590 /* AppDelegate.swift in Sources */,
 			);
@@ -269,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B5A28B201531D600D24590 /* circular_viewTests.swift in Sources */,
+				414382C520153B55005DC0D2 /* CircularView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B5A296201531D600D24590 /* circular_viewUITests.swift in Sources */,
+				414382C620153B55005DC0D2 /* CircularView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
