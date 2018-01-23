@@ -28,9 +28,8 @@ class CircularView: UIView {
         let path = createCircularPathIn(rect, context: context!)
 
         context?.addPath(path)
-        
-        
-        context?.setLineWidth(40.0)
+    
+        context?.setLineWidth(30.0)
         context?.strokePath()
     }
     
@@ -54,11 +53,11 @@ class CircularView: UIView {
     }
     
     private func createArcsOnCircle() -> [Arc] {
-        let totalParts:CGFloat = 10
-        let angularSpacingBetweenArcs  = CGFloat(0.3)
+        let totalParts:CGFloat = 28
+        let angularSpacingBetweenArcs  = CGFloat(0.1)
         let totalCircleLengthInRadians = CGFloat(2 * Double.pi)
         
-        let lengthOfEachSubArc = CGFloat((totalCircleLengthInRadians - 0.3 * totalParts) / totalParts)
+        let lengthOfEachSubArc = CGFloat((totalCircleLengthInRadians - angularSpacingBetweenArcs * totalParts) / totalParts)
         var nextAngle: CGFloat = 0.0
         var arcs:[Arc] = []
         
