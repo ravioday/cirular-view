@@ -24,20 +24,33 @@ class CircularView: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        let context = UIGraphicsGetCurrentContext()
-        let path = createCircularPathIn(rect, context: context!)
-
-        context?.addPath(path)
+//        useCoreGrahics(rect)
+        useShapeLayer(rect)
+    }
     
+    private func useShapeLayer(_ rect: CGRect) {
+        let circleLayer = CAShapeLayer()
+        let path = createCircularPathIn(rect)
+        circleLayer.path = path
+    
+        circleLayer.lineWidth   = 30.0;
+        circleLayer.strokeColor = UIColor.black.cgColor;
+        self.layer.addSublayer(circleLayer)
+    }
+    
+    private func useCoreGrahics(_ rect: CGRect) {
+        let context = UIGraphicsGetCurrentContext()
+        let path = createCircularPathIn(rect)
+        context?.addPath(path)
         context?.setLineWidth(30.0)
         context?.strokePath()
     }
     
-    private func createCircularPathIn(_ rect: CGRect, context: CGContext) -> CGMutablePath {
+    private func createCircularPathIn(_ rect: CGRect) -> CGMutablePath {
         let path = CGMutablePath()
         let center = CGPoint(x: rect.size.width / 2, y: rect.size.height / 2)
         let angles = createArcsOnCircle()
-        
+    
         let radius = CGFloat(100.0)
         
         for (index, arc) in angles.enumerated() {
